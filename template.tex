@@ -31,20 +31,6 @@
   urlcolor={black}
 }
 
-% Raise everything up by one level
-% this is because the MyST-export TeX file
-% has \section as the top-level heading,
-% but the LaTeX book class uses \chapter
-% as the top-level heading, which causes
-% all sorts of rendering issues (including
-% table of contents to be rendered incorrectly)
-% originally from: https://www.reddit.com/r/LaTeX/comments/agfjaz/redefining_sections_to_act_like_higher_level/
-\setcounter{secnumdepth}{3}
-\let\subsubsubsection\subsubsection
-\let\subsubsection\subsection
-\let\subsection\section
-\let\section\chapter
-
 % Partially-support physical units typesetting
 % by ab(using) mhchem's \ce command
 \let\pu\ce
